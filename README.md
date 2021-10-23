@@ -6,7 +6,8 @@
 `$ docker build -t rails:6.1.4 .`
 
 ### Run Rails command
-`$ docker run rails:6.1.4 xxxxxxxxx`
+`$ docker run --rm rails:6.1.4 xxxxxxxxx`
+`$ docker run --rm rails:6.1.4 -v`
 
 For example, create an new app called myapp
-`$ docker run rails:6.1.4 new myapp --force --database=postgresql`
+`$ docker run --rm rails:6.1.4 new myapp --force --database=postgresql`
